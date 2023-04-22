@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  display: flex;
+  padding: 10px 0;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resume>div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+}
+
+/*========================================*/
+
+#incomes {
+  display: block;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.incomes {
+  color: #23bb0f;
+}
+
+/*---------------*/
+
+#expenses {
+  display: block;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.expenses {
+  color: #D83121;
+}
+
+/*---------------*/
+
+#total {
+  display: block;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.total {
+  color: #2C73D2;
+}
+
+/*========================================*/
+
+.newItem {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.divDesc,
+.divType,
+.divAmount {
+  display: flex;
+  flex-direction: column;
+}
+
+.divType{
+  background-color: #ffffff;
+}
+
+.newItem>button {
+  background-color: #2C73D2;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 34px;
+}
+
+input,
+select {
+  padding: 6px;
+  margin: 3px auto;
+  border-radius: 6px;
+  border: solid 1px black;
+}
+
+.divTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 98%;
+  padding: 20px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+th {
+  text-align: start;
+  border-bottom: inset;
+  padding-bottom: 5px;
+  font-size: 15pt;
+}
+
+i {
+  font-size: 25px;
+}
+
+.bxs-chevron-up-circle {
+  color: #23bb0f;
+}
+
+.bxs-chevron-down-circle {
+  color: #D83121;
+}
+
+.columnAction {
+  width: 40px;
+  text-align: center;
+}
+
+.columnAction>button {
+  background: transparent;
+  border: none;
+}
+
+.columnAmount {
+  width: 30%;
+}
+
+.columnType {
+  width: 80px;
+  text-align: center;
+}
+
+.Dell {
+  cursor: pointer;
+}
+
+#btnNew {
+  font-weight: bold;
+}
+
+section footer {
+  margin-top: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+footer span{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*================== CATEGORIA =================*/
+
+#categoria option {
+  font-weight: bold;
+
+}
+
+#categoria{
+  background-color: #ffffff;
+  padding: 6px;
+}
+
+#linhaback:hover {
+  background-color: #ecebeb;
+}
+
+
+/*=================== RESPONSIVOS =================*/
+
+
+@media screen and (max-width: 830px){
+  .divTable{
+    font-size: small;
+  }
+
+  th{
+    font-size:medium;
+  }
+}

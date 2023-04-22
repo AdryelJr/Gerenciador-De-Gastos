@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Gastos</title>
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="porquin.png" type="img-porquin">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	<section>
+		<main>
+			<div class="resume">
+				<div id="incomes">
+					Entradas <br> R$ <span class="incomes">0.00</span>
+				</div>
+				<div id="expenses">
+					Saídas <br> R$ <span class="expenses">0.00</span>
+				</div>
+				<div id="total">
+					Total <br> R$ <span class="total">0.00</span>
+				</div>
+			</div>
+			<div class="newItem">
+				<div class="divDesc">
+					<label for="desc">Descrição</label>
+					<input type="text" id="desc" required />
+				</div>
+				<div class="divAmount">
+					<label for="amount">Valor</label>
+					<input type="number" id="amount" required />
+				</div>
+
+				<div class="category">
+					<label for="categoria">Categoria</label>
+					<br>
+					<select name="categoria" id="categoria">
+						<option value="">Selecione uma categoria</option>
+						<option value="Salário">Salário</option>
+						<option value="Alimentacao">Alimentação</option>
+						<option value="Transporte">Transporte</option>
+						<option value="Moradia">Moradia</option>
+						<option value="Lazer">Lazer</option>
+						<option value="Saude">Saúde</option>
+						<option value="Educacao">Educação</option>
+						<option value="Outros">Outros</option>
+					</select>
+				</div>
+
+				<div class="divType">
+					<label for="type">Tipo</label>
+					<select id="type">
+						<option>Entrada</option>
+						<option>Saída</option>
+					</select>
+				</div>
+				<button id="btnNew">Incluir</button>
+			</div>
+			<div class="divTable">
+				<table>
+					<thead>
+						<tr>
+							<th class="Desss">Descrição</th>
+							<th class="columCategoria">Categoria</th>
+							<th class="columnAmount">Valor</th>
+							<th class="columnType">Tipo</th>
+							<th class="columnAction"></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+		</main>
+		<footer>&copy;adryel_santosjr &nbsp;<span style="font-size: small;" >Versão 2.1</span></footer>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
