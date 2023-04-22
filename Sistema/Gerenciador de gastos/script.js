@@ -96,21 +96,16 @@ const tbody = document.querySelector("tbody");
 
 		loadItens();
 
-		// Selecione a caixa de seleção de categoria
 		const categoriaSelect = document.querySelector('#categoria');
 
-		// Adicione um ouvinte de eventos para o evento de alteração
+		
 		categoriaSelect.addEventListener('change', () => {
-			// Selecione o tipo de categoria selecionado
+			
 			const categoria = categoriaSelect.value;
-
-			// Selecione a lista correspondente
 			const lista = document.querySelector(`#${categoria}-lista`);
 
-			// Crie um novo item para a lista
 			const item = document.createElement('div');
 			item.textContent = 'Novo item';
-
-			// Adicione o novo item à lista
+			
 			lista.appendChild(item);
 		});
